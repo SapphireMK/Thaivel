@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<link href="main.css" rel="stylesheet" type="text/css">
+		<meta charset="utf-8">
+		<title>
+			Choose Your Destination
+		</title>
+		<script>
+			function myFunction(){
+				var TourArea = document.getElementById("TourArea");
+				var status = document.getElementById("budget");
+				var Time = document.getElementById("time")
+				if(TourArea.value=="History" && status.value=="Free" & Time.value=="AllTime"){
+					window.location.href="GiantSwing.html"
+				}
+				else if(TourArea.value=="Edu" && status.value=="100" & Time.value=="11:00am"){
+					window.location.href="Ratt.html"
+				}
+				else if(TourArea.value=="Landmark" && status.value=="Free" & Time.value=="AllTime"){
+					window.location.href="monument.html"
+				}
+				else if(TourArea.value=="Shop" && status.value=="Free" & Time.value=="10:00am"){
+					window.location.href="SamYanMitrtown.html"
+				}
+				else if(TourArea.value=="Shop" && status.value=="Free" & Time.value=="16:00pm"){
+					window.location.href="TamHarad.html"
+				}
+				else if(TourArea.value=="Art" && status.value=="200" & Time.value=="11:00am"){
+					window.location.href="ChangChui.html"
+				}
+				else if(TourArea.value=="History" && status.value=="Free" & Time.value=="15:00pm"){
+					window.location.href="Asia.html"
+				}
+				else if(TourArea.value=="Farm" && status.value=="Free" & Time.value=="10:00am"){
+					window.location.href="ReeFarm.html"
+				}
+				else if(TourArea.value=="Cultural" && status.value=="500" & Time.value=="8:00am"){
+					window.location.href="WatArun.html"
+				}
+				else if(TourArea.value=="Shop" && status.value=="1200" & Time.value=="10:00am"){
+					window.location.href="Jim.html"
+				}
+				else if(TourArea.value=="Cultural" && status.value=="500" & Time.value=="7:00am"){
+					window.location.href="WatPho.html"
+				}
+
+
+
+
+
+
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<div class="background">
+			<div class="hero">
+			<div class="navbar">
+				<img src="images/Insert-Image-Here.jpg " class="insert-image">
+
+				<ul>
+					<li><a href="index2.html">Home</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>	
+			</div>	
+
+			<div class="FirstMain">
+				<h1>Choose your destination detail</h1><br><br>
+				
+			</div>
+		<form name="myForm" method="post">
+		<div class="mainn">
+			<input type="search" name="Age" placeholder="How old are you?"id="Age">
+		</div>
+		<div class="mainn2">
+			<p>Please select the type of place you're going:<p>
+			<label for="TourArea" name="TourArea">Type of Tourist:</label>
+			<select name="TourArea" id="TourArea">
+				<option value="History" name="History">Historical</option>
+				<option value="Edu">Education</option>
+				<option value="Landmark">Landmark</option>
+				<option value="Shop">Shop</option>
+				<option value="Farm">Farm</option>
+				<option value="Art">Art</option>
+				<option value="Cultural">Cultural</option>
+
+			</select>
+		</div>
+		<div class="mainn3">
+			<p>Please select your budget:<p>
+			<label for="budget" name="budget">Budget</label>
+			<select name="budget" id="budget">
+				<option value="Free">Free</option>
+				<option value="100">100฿</option>
+				<option value="200" name="200">200฿</option>
+				<option value="400">400฿</option>
+				<option value="500">500฿</option>
+				<option value="800">800฿</option>
+				<option value="1200">1200฿</option>
+			</select>
+		</div>
+		<div class="mainn4">
+			<p>Chose your time you want to travel:<p>
+			<label for="time">Time</label>
+			<select name="time" id="time">
+				<option value="7:00am">7:00am</option>
+				<option value="8:00am">8:00am</option>
+				<option value="10:00am">10:00am</option>
+				<option value="11:00am">11:00am</option>
+				<option value="15:00pm">15:00pm</option>
+				<option value="16:00pm">16:00pm</option>	
+				<option value="20:00pm">20:00pm</option>
+				<option value="AllTime">All the time</option>
+			</select>
+		</div>
+		<div class="SubmitButtonn">
+			<input type="button" name="log" id="logbutton" value="Find a place for me" onclick="myFunction()">
+		</div>
+		</form>
+		
+			
+	
+		</div>
+		
+	</body>
+		
